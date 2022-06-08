@@ -40,7 +40,7 @@ All scripts are in `scripts/` directory.
 ### Parallel plus back-translation models
 1. Run `bash submit-parallel-plus-bt-ensembles.sh` to train ensembles of four models for each of the language pairs and different diversity datasets.
 2. Test ensemble performance as before with `bash test-ensemble.sh DICT_DIR MODEL{1..4}`
-    - e.g. `bash test-ensemble.sh ../datasets/parallel-plus-bt/tren/nucleus3M/enc-tren/ ../models/tren/tren-parallel-plus-bt-nucleus4M/tren-parallel-plus-bt-nucleus3M-*/checkpoint_best.pt`
+    - e.g. `bash test-ensemble.sh ../datasets/parallel-plus-bt/tren/nucleus3M/enc-tren/ ../models/tren/tren-parallel-plus-bt-nucleus3M/tren-parallel-plus-bt-nucleus3M-*/checkpoint_best.pt`
 
 ### Diversity metrics
 1. Run `bash calculate-diversity-metrics.sh INPUT_DATA LANG_FROM_LANG CORPUS_SIZE TYPE` to calculate the diversity metrics over the back-translated corpora.
